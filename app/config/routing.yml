@@ -40,4 +40,4 @@ home:
     path:     /{slug}
     defaults: { _controller: AppBundle:Home:index, slug: en }
     requirements:
-        _locale: en|ne    
+        _locale: en|de|ne    
