@@ -1,0 +1,16 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: tracar
+    database_user: root
+    database_password: 'null'
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 46b1d73b8076c04d29d1c71d0212d17969ffc427
+    locale: en
+    requiredlocales: en
+    defaultlocale: en
+    multilanguage: true
