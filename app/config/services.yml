@@ -4,3 +4,6 @@ parameters:
 #    parameter_name: value
 
 services:
+    admin_failure_handler:
+        class: AppBundle\Service\AuthenticationFailureHandlerService
+        arguments: [ '@service_container', '@router' ]

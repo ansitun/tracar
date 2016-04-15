@@ -1,8 +1,4 @@
-home:
-    path:     /{slug}
-    defaults: { _controller: AppBundle:Home:index, slug: en }
-    requirements:
-        _locale: en|ne
+
         
 _sonata_admin:
     resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
@@ -39,3 +35,9 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+
+home:
+    path:     /{slug}
+    defaults: { _controller: AppBundle:Home:index, slug: en }
+    requirements:
+        _locale: en|ne    

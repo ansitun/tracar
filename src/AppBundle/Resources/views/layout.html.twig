@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        {% stylesheets '@AppBundle/Resources/public/css/bootstrap.min.css'
+                       '@AppBundle/Resources/public/css/bootstrap-theme.min.css'
+                       '@AppBundle/Resources/public/css/structure.css'
+                       
+        filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        
+        {% javascripts '@AppBundle/Resources/public/js/jquery-1.11.1.min.js'
+                       '@AppBundle/Resources/public/js/bootstrap.min.js' 
+                       '@AppBundle/Resources/public/js/transition.js' 
+        %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </head>
+    <body>
+        <div>               
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <div class="flash-success">
+                    <div style="text-align: center">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</div>
+                    <a href="{{ path('fos_user_security_logout') }}">
+                        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                </div>
+                    
+                {% if app.user.locked %}
+                <div class="flash-info">
+                    Your account will be enabled by Admin soon.
+                </div>
+                {% endif %}
+                {% if not app.user.locked %}
+                    <div class="flash-info">
+                        Please visit the <a class="mydashboard" href="{{ path('sonata_admin_dashboard') }}">DashBoard</a>
+                    </div>
+                {% endif %}
+                
+                    
+            {% else %}
+                {% if app.request.get('_route') == 'fos_user_registration_register' or app.request.get('_route') == 'fos_user_registration_check_email' %}
+                    <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                {% else %}
+                    
+                    {#<a style="margin-top: -80px" href="{{ path('fos_user_registration_register') }}">Register</a>#}
+                    {# Commented registration part here - ansu#}
+                {% endif %}
+                
+                {% if app.request.get('_route') == 'fos_user_registration_check_email'  %}
+                    <div class="flash-success">
+                        Thank you for registering !<br />
+                    </div>
+                {% endif %}
+                
+            {% endif %}
+            
+            {% if app.request.get('_route') == 'fos_user_registration_confirmed' and app.user.customer %}
+                <div class="flash-info">
+                    Hi, {{ app.user.username }}, to view your dashboard, please click here-
+                    <a class="mydashboard"
+                       href='{{ path('sonata_admin_dashboard') }}'>My Dashboard</a>.
+                </div>
+            {% endif %}
+        </div>
+
+        {% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="row flash-{{ type }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        
+        <div>
+            {% block fos_user_content %}
+                
+            {% endblock fos_user_content %}
+        </div>
+        {% if app.request.query.all.slug is defined %}
+            <div style="margin-left:40%;margin-right:40%;">
+                <div class="alert alert-danger alert-dismissible" role="alert" style="text-align: center;">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    {{ app.request.query.all.slug }}
+                </div>
+            </div>
+        {% endif %}
+        
+    </body>
+</html>

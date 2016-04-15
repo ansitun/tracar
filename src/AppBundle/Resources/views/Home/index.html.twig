@@ -70,10 +70,10 @@
                         <a class="page-scroll" href="#services">{{ 'solutions'|trans }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">{{ 'types' |trans }}</a>
+                        <a class="page-scroll" href="#portfolio">{{ 'types' |trans }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">{{ 'features'|trans }}</a>
+                        <a class="page-scroll" href="#about">{{ 'features'|trans }}</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">{{ 'portal' |trans }}</a>
@@ -88,8 +88,8 @@
                           <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu lang" style="padding: 10px">
-                            <li id="en"> <a style="color: #315B80" href="./en">English</a> </li>
-                            <li id="ne"> <a style="color: #315B80" href="./de">Deutsche</a> </li>
+                            <li id="en"> <a style="color: #315B80" href="{{ path('home') }}">English</a> </li>
+                            <li id="ne"> <a style="color: #315B80" href="{{ path('home', {slug:'ne'}) }}">Deutsche</a> </li>
                         </ul>
                       </div>
                     </li>    
