@@ -1,0 +1,62 @@
+title: Ansuraj!
+sub_title: TRACAR
+title_subtext: 'GSM GNSS Tracking Solutions'
+know_more: 'Surf On!'
+solutions: Solutions
+features: Features
+types: Types
+portal: Portal
+contact: Contact
+solutions_desc: 'TRACAR provides a wide range of soutions.'
+description: Description
+transmission: 'Data Transmission'
+transmission_desc: 'Data transmission by GPRS/EDGE/UMTS/HSPA'
+support: 'Space-Based Navigation'
+support_desc: 'Supports A-GPS/Glonas/BeiDou/Galileo'
+devices: Devices
+devices_desc: '6 axes G-Sensor; serial ports, I/O Ports, 1-wire, OBD2, CAN-BUS'
+ip67: IP67
+ip67_desc: 'Tracar IP67'
+obd2: OBD2
+obd2_desc: 'Tracar OBD2'
+wired: WIRED
+wired_desc: 'Tracar wired'
+ip67_desc_detailed: 'Shock resistant, waterproof IP67'
+ip67_desc_1: 'GPS antenna external, GSM antenna internal'
+ip67_desc_2: '3x digital input, 1x analog input'
+ip67_desc_3: '2x output max. 300mA'
+ip67_desc_4: 'Backup battery Li-Polymer'
+ip67_desc_5: 'Operating temprature-20°C - +70°C'
+obd2_desc_detailed: 'On Board Diagnostics'
+obd2_desc_1: 'No installation costs'
+obd2_desc_2: 'Backup batterie for data transmission if disconnected from car'
+obd2_desc_3: 'OBD2 data transmisson'
+obd2_desc_4: 'DTC error codes'
+obd2_desc_5: 'Light Weight'
+wired_desc_detailed: 'Wide range of accessibility'
+wired_desc_1: 'Up to 3x RS-232, 1x RS-485, OBD'
+wired_desc_2: '5x digital input, 2x analog input, 4x output'
+wired_desc_3: 'Up to 4 1-Wire accessoires'
+wired_desc_4: 'RFID reader, i-Button, temperatur sensor'
+wired_desc_5: 'On demand with handsfree set'
+features_desc: 'Generel features provided by Tracar'
+features_1: 'Live tracking'
+features_2: 'Position request by internet'
+features_3: 'Monitoring of speed'
+features_4: 'E-Mail alerts'
+features_5: 'Data storage at Tracar web portal'
+features_6: 'Hardware jamming detection'
+features_7: 'Internal memory for 100.000 Logs'
+features_8: 'Battery monitoring'
+features_9: 'Records routes and speeds'
+features_10: 'Captures engine and ignition on/off'
+portal_1: Sample1
+portal_2: Sample2
+portal_3: Sample3
+portal_4: Sample4
+portal_5: Sample5
+portal_6: Sample6
+portal_7: Sample7
+portal_8: Sample8
+portal_9: Sample9
+portal_10: Sample10

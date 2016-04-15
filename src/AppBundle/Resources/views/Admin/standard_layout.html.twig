@@ -1,0 +1,91 @@
+{% extends "SonataAdminBundle::standard_layout.html.twig" %}
+
+{% block sonata_page_content_header %}
+
+{% block stylesheets2 %}
+    <style>
+        .icon-ok:before {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\e013";
+        }
+        .icon-remove:before {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\e014";
+        }
+    </style>
+{% endblock %}
+    
+    {% block sonata_page_content_nav %}
+        {% if _tab_menu is not empty or _actions is not empty or _list_filters_actions is not empty %}
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid" style="margin-top: 50px !important">
+                    <h3 class="pull-left" style="margin-top:10px;margin-right: 10px;">{{ admin.getLabel() }} </h3>
+                    {% block tab_menu_navbar_header %}
+                        {% if _navbar_title is not empty %}
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">{{ _navbar_title|raw }}</a>
+                            </div>
+                        {% endif %}
+                    {% endblock %}
+
+                    <div class="navbar-collapse">
+                        <div class="navbar-left">
+                            {% if _tab_menu is not empty %}
+                                {{ _tab_menu|raw }}
+                            {% endif %}
+                        </div>
+
+                        {% if admin is defined and action is defined and action == 'list' and admin.listModes|length > 1 %}
+                            <div class="nav navbar-right btn-group">
+                                {% for mode, settings in admin.listModes %}
+                                    <a href="{{ admin.generateUrl('list', app.request.query.all|merge({_list_mode: mode})) }}" class="btn btn-default navbar-btn btn-sm{% if admin.getListMode() == mode %} active{% endif %}"><i class="{{ settings.class }}"></i></a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        {% if _actions|replace({ '<li>': '', '</li>': '' })|trim is not empty %}
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown sonata-actions">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'link_actions'|trans({}, 'SonataAdminBundle') }} <b class="caret"></b></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        {{ _actions|raw }}
+                                    </ul>
+                                </li>
+                            </ul>
+                        {% endif %}
+
+                        {% if _list_filters_actions is not empty %}
+                            {{ _list_filters_actions|raw }}
+                        {% endif %}
+                    </div>
+                </div>
+            </nav>
+        {% endif %}
+    {% endblock sonata_page_content_nav %}
+{% endblock sonata_page_content_header %}
+
+{% block side_bar_after_nav %}
+    <div style="margin: 10px;">
+        <kbd>
+            <p>Hello {{app.user.username}}!</p>
+            <p>Welcome to Tracar!
+            <p>The site is in <mark>BETA</mark> stage.</p>
+        </kbd>
+    </div>
+{% endblock %}
