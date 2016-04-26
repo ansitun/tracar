@@ -21,14 +21,22 @@ $('body').scrollspy({
 });
     
 $(document).ready(function(){
-    for(var i=1; i<=10; i++) {
-        animateDiv(i);
-    }
-    
+//    for(var i=1; i<=10; i++) {
+//        animateDiv(i);
+//    }
+    randomFade();
+
     $(window).on("scroll",check_if_in_view);
 });
 
-
+function randomFade() {
+    for(i=0; i<=2; i++) {
+        setInterval(function () {
+                $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')').fadeIn(500).delay(1000).fadeOut(750).delay(1000).fadeIn(7500);
+            }, 2000); 
+    }
+    return;
+}
 
 function check_if_in_view() {
       var $animation_elements = $('.timeline > li');

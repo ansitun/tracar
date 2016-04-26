@@ -23,14 +23,6 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-        <style>
-        .fa-4x {
-            padding: 20px;
-        }
-        .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-            background-color: #6B5E5E !important;
-        }
-        </style>
     {% endblock %}
 
 
@@ -82,7 +74,7 @@
                         <a class="page-scroll" href="#contact">{{ 'contact' |trans }}</a>
                     </li>
                     <li>
-                        <div class="btn-group" style="margin: 10px">
+                        <div class="btn-group" style="margin-top: 7px">
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                           Language
                           <span class="caret"></span>
@@ -124,22 +116,24 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">{{ 'sub_title'|trans }}</div>
+                {#<div class="intro-lead-in">{{ 'sub_title'|trans }}</div>#}
                 <div class="intro-heading">{{ 'title_subtext'|trans }}</div>
-                <a href="#services" class="page-scroll btn btn-xl">{{ 'know_more'|trans }}</a>
+                <a href="#services" class="page-scroll btn btn-xl" style="margin-top:300px;">{{ 'know_more'|trans }}</a>
             </div>
         
         </div>
-        <div class="random-float" id ="random-float-1" style="font-size: 20px; opacity: 0.7">43°2’27” N</div>   
-        <div class="random-float" id ="random-float-2" style="font-size: 40px; opacity: 0.3">13°24’53” N</div>   
-        <div class="random-float" id ="random-float-3" style="font-size: 35px; opacity: 0.6">51°21’35” N</div>   
-        <div class="random-float" id ="random-float-4" style="font-size: 14px; opacity: 0.5">43°12’47” N</div>   
-        <div class="random-float" id ="random-float-5" style="font-size: 30px; opacity: 0.5">3°52’24” N</div>   
-        <div class="random-float" id ="random-float-6" style="font-size: 25px; opacity: 0.3">5°9’43” N</div>   
-        <div class="random-float" id ="random-float-7" style="font-size: 20px; opacity: 0.2">8°23’40” N</div>   
-        <div class="random-float" id ="random-float-8" style="font-size: 22px; opacity: 0.5">6°9’25” N</div>   
-        <div class="random-float" id ="random-float-9" style="font-size: 17px; opacity: 0.3">17°34’43” N</div>   
-        <div class="random-float" id ="random-float-10" style="font-size: 10px; opacity: 0.7">28°5’29” N</div>   
+        <div class="random-float">
+            <div id="123" style="font-size: 190%; opacity: 0.7; top:50%; left:30%;">43°2’27” N</div>   
+            <div style="font-size: 222%; opacity: 0.3; top:37%; left:74%;">13°24’53” N</div>   
+            <div style="font-size: 335%; opacity: 0.6; top:48%; left:80%;">51°21’35” N</div>   
+            <div style="font-size: 140%; opacity: 0.5; top:57%; left:68%;">43°12’47” N</div>   
+            <div style="font-size: 389%; opacity: 0.5; top:64%; left:21%;">3°52’24” N</div>   
+            <div style="font-size: 250%; opacity: 0.3; top:45%; left:64%;">5°9’43” N</div>   
+            <div style="font-size: 420%; opacity: 0.2; top:39%; left:55%;">8°23’40” N</div>   
+            <div style="font-size: 429%; opacity: 0.5; top:56%; left:36%;">6°9’25” N</div>   
+            <div style="font-size: 175%; opacity: 0.3; top:41%; left:63%;">17°34’43” N</div>   
+            <div style="font-size: 521%; opacity: 0.7; top:56%; left:64%;">28°5’29” N</div>   
+        </div>
     </header>
 
         <!---- this part ends ---->
