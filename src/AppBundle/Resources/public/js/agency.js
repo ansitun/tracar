@@ -34,7 +34,7 @@ function randomFade() {
 }
 
 function check_if_in_view() {
-      var $animation_elements = $('.timeline > li, .straight, .inverted');
+      var $animation_elements = $('.timeline > li, .rotate');
       var $window = $(window);
       var window_height = $window.height();
       var window_top_position = $window.scrollTop();

@@ -25,13 +25,13 @@ body{overflow-x:hidden;font-family:"Sans-serif","Helvetica Neue"}.text-muted{col
 }
 
 header{
-/*background-image:url(../img/header-bg.jpg);*/
-background: linear-gradient(to top, #21416B, #A3DBF6);
+background-image:url(../img/background.jpg);
+/*background: linear-gradient(to top, #21416B, #A3DBF6);
 background: -webkit-gradient(linear, bottom, top, from(rgba(20,50,95,0.9)), to(rgba(90,195,240,1)));
 background: -moz-linear-gradient(top, rgba(20,50,95,0.9), rgba(90,195,240,1));
 background: -o-linear-gradient(top, rgba(20,50,95,0.9), rgba(90,195,240,1));
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0.9), endColorstr=rgba(90,195,240,1));
--ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0.9),endColorstr=rgba(90,195,240,1));
+-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0.9),endColorstr=rgba(90,195,240,1));*/
 /*-ms-linear-gradient: (left, rgba(20,50,95,0.9), 0%, rgba(90,195,240,1) 100%);*/
 
 background-repeat:none;
@@ -68,7 +68,7 @@ background-size: cover;
     top: 20%;
 }
 
-.col-md-4 > .straight, .timeline > li{
+.timeline > li{
   opacity: 0;
   -moz-transition: all 800ms linear;
   -webkit-transition: all 800ms linear;
@@ -81,7 +81,7 @@ background-size: cover;
   transform: translate3d(-100px, 0px, 0px);
 }
 
-.col-md-4 > .inverted, .timeline > li.timeline-inverted{
+.timeline > li.timeline-inverted{
   opacity: 0;
   -moz-transition: all 800ms linear;
   -webkit-transition: all 800ms linear;
@@ -94,6 +94,17 @@ background-size: cover;
   transform: translate3d(100px, 0px, 0px);    
 }
 
+.col-md-4 > .rotate {
+  opacity: 0;
+  -moz-transition: all 800ms linear;
+  -webkit-transition: all 800ms linear;
+  -o-transition: all 800ms linear;
+  transition: all 800ms linear;
+  -ms-transform: rotate(-180deg); /* IE 9 */
+  -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+  transform: rotate(-180deg);
+}
+
 .col-md-4 > .in-view, .col-md-4 > .in-view, .timeline > li.in-view{
   opacity: 1;
   -moz-transform: translate3d(0px, 0px, 0px);
@@ -101,4 +112,8 @@ background-size: cover;
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
+  
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
 }
