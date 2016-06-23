@@ -27,8 +27,8 @@ $(document).ready(function(){
 
 function randomFade() {
     setInterval(function () {
-            $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')').fadeIn(1000).delay(1000).fadeOut(1000).delay(1000).fadeIn(1000);
-        }, 2500); 
+            $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')').fadeIn(800).delay(800).fadeOut(800).delay(800).fadeIn(800);
+        }, 1800); 
         
     return;
 }
