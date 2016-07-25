@@ -971,10 +971,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 
 @media screen and (min-width: 300px) and (max-width: 799px) {
     
-    body {
-        max-width: 400px !important;
-    }
-    
     .navbar-default {
         width: 400px;
         padding: 0px;
