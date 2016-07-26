@@ -976,9 +976,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         padding: 0px;
     }
     
-    .header {
-        width: auto;
-        width: device-width;
+    header {
+        width: inherit;
     }
     
     .navbar-toggle {
