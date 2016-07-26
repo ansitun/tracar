@@ -999,6 +999,52 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     }
 }
 
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (width : 375px) 
+    and (height : 559px) 
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+    .navbar-default {
+        width: 375px;
+        padding: 0px;
+        max-width: 375px;
+    }
+    
+    header {
+        width: 375px;
+        max-width: 375px;
+    }
+    
+    .navbar-toggle {
+        margin-top: 8%;
+        margin-right: 6%
+    }
+    
+    .fa-4x {
+        font-size: 2em;
+        padding: 10px;
+    }
+    .fa-stack-2x {
+        font-size: 1.25em;
+    }
+    .timeline>li .timeline-image {
+        width: auto;
+        height: auto;
+        margin-left: 2%;
+    }
+
+    .navbar-toggle {
+        margin-top: 8%;
+        margin-right: 6%
+    }
+}
 
 /*@media screen and (min-width: 800px) {
     .fa-4x {
