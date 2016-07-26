@@ -596,7 +596,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff
+/*    border: 7px solid #fff*/
 }
 
 .team-member h4 {
@@ -978,6 +978,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     
     .header {
         width: auto;
+        width: device-width;
     }
     
     .navbar-toggle {
