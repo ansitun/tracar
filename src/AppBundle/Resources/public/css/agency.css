@@ -972,12 +972,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 @media screen and (min-width: 300px) and (max-width: 799px) {
     
     .navbar-default {
-        width: 400px;
+        width: auto;
         padding: 0px;
     }
     
     .header {
-        width: 400px;
+        width: auto;
     }
     
     .navbar-toggle {
