@@ -1002,6 +1002,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         height: auto;
         margin-left: 2%;
     }
+    
+    .col-md-1 {
+        width: 25%;
+        margin-left: 36%;
+        padding: 3%;
+    }
 }
 
 @media only screen 
@@ -1048,6 +1054,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     .navbar-toggle {
         margin-top: 8%;
         margin-right: 6%
+    }
+    
+    .col-md-1 {
+        width: 25%;
+        margin-left: 36%;
+        padding: 3%;
     }
 }
 

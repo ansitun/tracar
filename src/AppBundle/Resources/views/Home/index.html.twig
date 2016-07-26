@@ -57,7 +57,7 @@
                 <a style="padding-left:2%;" class="navbar-brand page-scroll" href="#page-top"><img width="120px" src="{{ asset('bundles/app/img/logos/tracar-logo.png') }}" class="rcorners img-responsive" alt=""></a>
                 
                 <!--
-                <a style="padding:10px; float:none;" class="navbar-brand page-scroll" href="#page-top"><img style="width:15%; margin-top: -20px; margin-left: 40px" src="{{ asset('bundles/app/img/logos/vodafone.png') }}" class="rcorners img-responsive" alt=""></a>
+                 was here
                 -->
                 </p>
             </div>
@@ -521,10 +521,13 @@
     <footer>
         <div class="container" class="bg-light-blue">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="copyright">Copyright &copy; {{ 'box' |trans }} </span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-1">        
+                    <img style="width:80%; margin-top: -20%" src="{{ asset('bundles/app/img/logos/vodafone.png') }}" class="rcorners img-responsive" alt="">
+                </div> 
+                <div class="col-md-3">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -534,14 +537,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">{{ 'pri_policy' |trans }}</a>
                         </li>
                         <li><a href="#">{{ 'terms' |trans }}</a>
                         </li>
                     </ul>
-                </div>
+                </div>   
             </div>
         </div>
     </footer>
