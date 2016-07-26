@@ -1,3 +1,8 @@
+@font-face {
+ font-family: 'Dinpro';
+  src: url(../font/DINPro-Light.otf);
+}
+
 body {
     overflow-x: hidden;
     font-family: "Sans-serif", "Helvetica Neue"
@@ -266,7 +271,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-top: 50%;
-    font-family: "Lucida Grande", "Sans-serif";
+    font-family: "Dinpro", "Lucida Grande", "Sans-serif";
     text-transform: uppercase;
     font-weight: 100;
     font-size: 35px;
@@ -286,7 +291,7 @@ header .intro-text .intro-heading {
         margin-bottom: 25px
     }
     header .intro-text .intro-heading {
-        font-family: "Lucida Grande", "Sans-serif";
+        font-family: "Dinpro", "Lucida Grande", "Sans-serif";
         text-transform: uppercase;
         font-weight: 100;
         font-size: 70px;
