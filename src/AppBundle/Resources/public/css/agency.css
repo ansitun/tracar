@@ -1011,8 +1011,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         padding: 3%;
     }
     
-    body, html { overflow-x:hidden; }
-    
     .container {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -1063,12 +1061,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         width: 25%;
         margin-left: 36%;
         padding: 3%;
-    }
-    
-    body, html { overflow-x:hidden; }
-    
-    .large-width {
-        width: 94%;
     }
     
     .container {
