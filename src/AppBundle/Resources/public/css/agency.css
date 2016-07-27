@@ -229,33 +229,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: rgba(90, 195, 240, 1)
 }
 
-@media (min-width:768px) {
-    .navbar-default {
-        background-color: #fff;
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-        border: 0
-    }
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s
-    }
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px
-    }
-    .navbar-default.navbar-shrink {
-        background-color: #fff;
-        padding: 25px 0
-    }
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em
-    }
-}
-
 header .intro-text {
     padding-top: 35px;
     padding-bottom: 50px
@@ -280,6 +253,35 @@ header .intro-text .intro-heading {
 }
 
 @media (min-width:768px) {
+        .navbar-default {
+        background-color: #fff;
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
+    }
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+    .navbar-default.navbar-shrink {
+        background-color: #fff;
+        padding: 25px 0
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+    
+    .large-width {
+        width: 104%;
+    }
+    
     header .intro-text {
         margin-top: -30%
     }
@@ -1028,13 +1030,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2)
-{ 
-    .navbar-default {
-        width: 375px;
-        padding: 0px;
-        max-width: 375px;
-    }
-    
+{   
     header {
         width: 375px;
         max-width: 375px;
@@ -1070,6 +1066,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     }
     
     body, html { overflow-x:hidden; }
+    
+    .large-width {
+        width: 94%;
+    }
     
     .container {
         max-width: 100% !important;
