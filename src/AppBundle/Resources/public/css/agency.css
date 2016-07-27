@@ -984,7 +984,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     }
     
     header {
-        width: inherit;
+        width: auto;
+        overflow: hidden;
+        overflow-y: auto;
     }
     
     .navbar-toggle {
@@ -1030,8 +1032,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     and (-webkit-min-device-pixel-ratio : 2)
 {   
     header {
-        width: 375px;
-        max-width: 375px;
+        width: auto;
+        overflow: hidden;
+        overflow-y: auto;
     }
     
     .navbar-toggle {
