@@ -27,7 +27,14 @@ $(document).ready(function(){
 
 function randomFade() {
     setInterval(function () {
-            $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')').fadeIn(800).delay(800).fadeOut(800).delay(800).fadeIn(800);
+            $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')')
+                .animate({ "left": "-=30px" }, "slow")
+                .fadeIn(800)
+                .delay(800)
+                .animate({ "left": "+=30px" }, "slow")
+                .fadeOut(800)
+                .delay(800)
+                .fadeIn(800);
         }, 1800); 
         
     return;

@@ -978,6 +978,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 
 @media screen and (min-width: 300px) and (max-width: 799px) {
     
+    header .intro-text .intro-heading {
+        margin-top: 70%;
+    }
+    
     .navbar-default {
         width: auto;
         padding: 0px;
@@ -1030,7 +1034,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     and (aspect-ratio : 375/559)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2)
-{   
+{
+    header .intro-text .intro-heading {
+        margin-top: 70%;
+    }
+    
     header {
         width: auto;
         overflow: hidden;
