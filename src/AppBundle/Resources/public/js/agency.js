@@ -13,6 +13,24 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    
+    $("#language").bind("click", function(e) {
+        
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            e.cancelBubble = true;
+            
+            if($(".dropdown-menu .lang").is(":visible")) {
+                $("#bs-example-navbar-collapse-1").removeClass("in").attr("aria-expanded", "false").css("height", "1px");
+                $("#language").attr("aria-expanded", false).parent().removeClass("open");
+            } else {
+                $("#bs-example-navbar-collapse-1").addClass("in").attr("aria-expanded", "true").css("height", "450px");
+                $("#language").attr("aria-expanded", true).parent().addClass("open");
+            }
+         // check here
+    });
+    
 });
 
 // Highlight the top nav as scrolling occurs
