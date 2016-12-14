@@ -31,6 +31,15 @@ $(function() {
          // check here
     });
     
+    $("#custom-policy").bind("click", function(e) {
+        if($(this).html().indexOf("Privacy") != -1) {
+            $("#policy-content1").show();
+            $("#policy-content2").hide();
+        } else {
+            $("#policy-content1").hide();
+            $("#policy-content2").show();
+        }
+    });
 });
 
 // Highlight the top nav as scrolling occurs

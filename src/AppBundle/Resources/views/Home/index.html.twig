@@ -82,7 +82,7 @@
                         </a>
                         <ul class="dropdown-menu lang" style="padding: 10px">
                             <li id="en"> <a style="color: #315B80" href="{{ path('home') }}">English</a> </li>
-                            <li id="ne"> <a style="color: #315B80" href="{{ path('home', {slug:'de'}) }}">Deutsche</a> </li>
+                            <li id="ne"> <a style="color: #315B80" href="{{ path('home', {slug:'de'}) }}">Deutsch</a> </li>
                         </ul>
                       </div>
                     </li>    
@@ -145,7 +145,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{ 'solutions'|trans }}</h2>
-                    <h3 class="section-subheading text-muted">{{ 'solutions_desc'|trans }}</h3>
+                    <center><h3 class="section-subheading text-muted" style="width: 250px;">{{ 'solutions_desc'|trans }}</h3></center>
                 </div>
             </div>
             <div class="row text-center">
@@ -208,7 +208,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ asset('bundles/app/img/extra/obd2-large.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/app/img/extra/obd2-large-new.jpg') }}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ 'obd2'|trans }}</h4>
@@ -222,7 +222,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ asset('bundles/app/img/extra/wired-large.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/app/img/extra/wired-large-new.jpg') }}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ 'wired'|trans }}</h4>
@@ -503,8 +503,10 @@
     
     <!-- Map Aside -->
     <aside class="clients">
-       <center><div style="width: 80%; margin: 2%"><iframe width="100%" height="600" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=Saarland%2C%20Germany+(Tracar)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/creez-une-carte-google/">Maps</a> by 
-           <a href="http://www.mapsdirections.info/fr/">Google Maps</a></iframe></div>
+       <center><div style="width: 80%; margin: 2%">
+                <iframe width="100%" height="600" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=Ernst-Abbe-Stra%C3%9Fe%201%2C%2066115%20Saarbr%C3%BCcken%2C%20Germany+(Leoworx%20Ortungssysteme%20GmbH)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pl/stworz-mape-google/">Osadź html Google Maps</a>
+                </iframe>
+               </div>
        </center>   
        
     </aside>
@@ -512,27 +514,27 @@
     <footer>
         <div class="container" class="bg-light-blue">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <span class="copyright">Copyright &copy; {{ 'box' |trans }} </span>
                 </div>
                 <div class="col-md-1">        
                     <img style="width:80%; margin-top: -20%" src="{{ asset('bundles/app/img/logos/vodafone.png') }}" class="rcorners img-responsive" alt="">
                 </div> 
-                <div class="col-md-3">
-                    <ul class="list-inline social-buttons">
+                <div class="col-md-2">
+                    <!--<ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="col-md-5">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">{{ 'pri_policy' |trans }}</a>
+                        <li><a href="#policy" data-toggle="modal" id="custom-policy">{{ 'pri_policy' |trans }}</a>
                         </li>
-                        <li><a href="#">{{ 'terms' |trans }}</a>
+                        <li><a href="#terms" data-toggle="modal">{{ 'terms' |trans }}</a>
                         </li>
                     </ul>
                 </div>   
@@ -542,6 +544,165 @@
 
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
+    
+    <!-- Policy Modal  -->
+    <div class="portfolio-modal modal fade" id="policy" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content" style="text-align: left">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <div id="policy-content1">
+                                <center><b>PRIVACY POLICY</b></center>
+<p>This Privacy Policy is only a courtesy translation. Please refer to our German Datenschutzerklärung for legally binding privacy information.
+It is important to us to protect our customers’ and users‘ privacy and to keep their data safe. Therefore, we designed this website www.tracar.de and our business processes according to the principle of Privacy-by-Design. We process as little personal data as necessary.
+</p>
+<p>
+The following Privacy Policy gives information on which data we process while you use our website. Additionally, you will find information how we process your data.
+<br /><br />
+<b>Personal Data</b><br />
+Personal data such as name, address, telephone number email address will not be processed by us unless you decide to submit this data to us e.g. by using our contact form. We will process your data only for those purposes that were defined when you submitted your data. Only when you give additional consent we will use your data for other purposes (e.g. business offers, marketing).
+<br /><br />
+<b>Access Data / Server Log Files</b><br/>
+When you access our website we will collect the following data:
+<ul><li>IP address</li>
+    <li>Access timestamp</li>
+    <li>Requested resource</li>
+    <li>Request Status</li>
+    <li>Amount of transferred data</li>
+    <li>Referrer</li>
+    <li>Name and version of browser software</li>
+</ul><br />
+We use this data to operate our website, to maintain its security and to fix technical errors. Server log files are deleted in regular intervals.
+<br /><br />
+<b>Technical Operations - Cookies</b><br />
+This website uses cookies to simplify user access and to improve your user experience. If you do not want us to store cookies on your computer you may either opt-out of the use of cookies in general or instruct your browser to request permission if a website wants to use cookies. Please refer to your browser settings for details.
+We use cookies for the sole purpose of maintaining the websites technical operation.
+<br /><br />
+<b>Statistical Analysis / Google Analytics Tracking</b><br/>
+When accessing our Website we will transfers data to our service partner Google Inc (Google) through its product Google Analytics. Our implementation of Google Analytics is configured to anonymize your IP address before transferring any data to Google. Google processes your data on our behalf to analyse your website activities and to assemble reports. We use these reports to measure your interest in our website and to improve our services.
+If you would like to opt-out of Google Analytics Tracking you may install a browser add-on.
+<br /><br />
+<b>Security</b><br/>
+We have established multiple technical and organisational measures to protect your personal data from unauthorized access and misuse. Our security measures are monitored regularly and adjusted to industry standards. Our employees are contractually obligated to respect your privacy.
+<br /><br />
+<b>Links to external Websites</b><br/>
+By accessing an external website through a link its provider may receive referrer information, i.e. the resource address from our website on which you clicked zhe link. It is the responsibility of the external website’s provider to respect your privacy regarding referrer information. We have no technical possibilities to stop the transfer of referrer information.
+<br /><br />
+<b>Further Information</b><br/>
+Please do not hesitate to contact us for more information about your personal data. You will find our contact details on our Imprint page.
+<br /><br />
+                            </div>
+                            
+                            <div id="policy-content2" style="display: none">
+                                <center><b>DATENSCHUTZERKLÄRUNG</b></center>
+<p>
+Der Schutz und die Sicherheit der Daten unserer Kunden und Nutzer sind uns wichtig. Wir haben deshalb unsere Webseite www.tracar.de und unsere Geschäftsprozesse so gestaltet, dass möglichst wenige personenbezogene Daten erhoben oder verarbeitet werden.
+Die folgende Erklärung zum Datenschutz erläutert, welche Informationen wir während Ihres Besuchs auf unserer Webseite erfassen und welche Teile dieser Informationen auf welche Weise genutzt und verarbeitet werden.
+</p><br />
+<b>Personenbezogene Daten</b><br/>
+Personenbezogene Daten wie z.B. Name, Anschrift, Telefonnummer oder E-Mail-Adresse werden von uns nicht erfasst, es sei denn, diese Angaben werden von Ihnen freiwillig gemacht, z.B. bei Nutzung des Kontaktformulars. Wir verwenden Ihre freiwillig angegebenen Daten ausschließlich für den Zweck, zu dem Sie uns diese überlassen haben. Nur wenn Sie uns Ihre Einwilligung auch für die Verwendung im Rahmen weiterer Angebote oder für Marketingzwecke gegeben haben, nutzen wir Ihre Daten auch für diese Zwecke.
+<br /><br />
+<b>Zugriffsdaten / Server-Logfiles</b><br/>
+Wenn Sie unsere Internetseite benutzen, erheben wir bei jedem Zugriff folgende Daten:
+<ul><li>IP-Adresse</li>
+    <li>Zeitstempel des Zugriffs</li>
+    <li>abgefragte Ressource</li>
+    <li>Status</li>
+    <li>Übertragene Datenmenge</li>
+    <li>Herkunft Ihres Seitenaufrufes</li>
+    <li>Name und Version der Browsersoftware</li>
+</ul><br/>
+Diese Daten werden zur Aufrechterhaltung des Betriebs, der Sicherheit der Webseite und zur Fehlerbehebung verarbeitet. Server-Logfiles werden regelmäßig gelöscht.
+<br /><br />
+<b>Technische Steuerung - Cookies</b><br/>
+
+Auf unserer Seite werden sogenannte „Cookies“ verwendet. Diese vereinfachen und beschleunigen die Steuerung Ihres Besuchs auf unserer Internetseite. Sollten Sie die Verwendung der Cookies durch unsere Webseite auf ihrem Computer nicht wünschen, so können Sie in Ihrer Browsereinstellung die Cookies deaktivieren und die Browsereinstellung so wählen, dass Sie bei der Verwendung von Cookies auf einer Internetseite darüber informiert werden.
+Wir verwenden Cookies ausschließlich, um den technischen Betrieb der Webseite sicherzustellen.
+<br /><br />
+<b>Statistische Auswertung / Tracking via Google Analytics</b><br/>
+Wenn Sie unsere Webseiten besuchen, übertragen wir Daten an unseren Dienstleister Google Inc. (Google) im Rahmen der Lösung Google Analytics. Google Analytics ist so konfiguriert, dass Ihre IP-Adresse nur anonymisiert an Google übertragen wird (anonymizeIP). Google verarbeitet Ihre Nutzungsdaten in unserem Auftrag, um Webseitenaktivitäten in Form von Reports zusammenzustellen. Wir verwenden diese Reports, um Ihr Interesse an unseren Angeboten zu bemessen und um diese zu verbessern. 
+Wenn Sie kein Tracking durch Google Analytics wünschen, können Sie ein Browser-Add-on installieren, um das Tracking durch Google Analytics zu unterbinden.
+<br /><br />
+<b>Sicherheit</b><br/>
+Zum Schutz Ihrer bei uns vorgehaltenen personenbezogenen Daten vor unberechtigtem Zugriff und Missbrauch haben wir umfangreiche technische und betriebliche Vorkehrungen getroffen. Unsere Sicherheitsverfahren werden regelmäßig überprüft und dem technologischen Fortschritt angepasst. Unsere Mitarbeiter sind zur Wahrung der Vertraulichkeit verpflichtet.
+<br /><br />
+<b>Links zu anderen Websites</b><br />
+Rufen Sie eine externe Internetseite von unserer Seite auf (externer Link), wird der externe Anbieter möglicherweise von Ihrem Browser die Information erhalten, von welcher unserer Internetseiten Sie zu ihm gekommen sind. Für diese Daten ist der externe Anbieter verantwortlich. Wir sind, wie jeder andere Anbieter von Internetseiten, nicht in der Lage, diesen Vorgang zu beeinflussen.
+<br /><br />
+<b>Weitere Auskunft</b><br />
+Sollten Sie weitere Fragen haben, bspw. zu Daten, die wir zu Ihrer Person gespeichert haben, nehmen Sie gern Kontakt mit uns auf. Die einzelnen Möglichkeiten hierzu entnehmen Sie bitte unserem Impressum. In diesem Rahmen erfüllen wir selbstverständlich auch Ihr normiertes Recht auf Auskunft.
+<br /><br />
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;{{ 'close_project'|trans }}</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        
+    <!-- Policy Modal  -->
+    <div class="portfolio-modal modal fade" id="terms" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content"  style="text-align: left">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <div>
+                                <b>Tracar ist eine Marke der Leoworx Ortungssysteme GmbH</b><br /><br />
+
+Leoworx Ortungssysteme GmbH<br />
+Ernst-Abbe-Str. 1<br />
+66115 Saarbrücken
+<br /><br />
+Telefon: <u>+49-681-9067593</u><br />
+E-Mail: dialog[at]leoworx.com
+<br /><br />
+Geschäftsführer: <u>Ralf Kiehne</u>
+<br /><br />
+Registergericht: Saarbrücken<br />
+Handelsregisternummer: HRB 100591<br />
+Ust. IDNr.: DE 285987245  <br />
+<br />
+<b>Registrierungsnummern</b>
+<br />
+Grüner Punkt<br />
+Duales System Deutschland 5568347<br />
+<hr />
+Batteriegesetz<br />
+GRS 109101377<br />
+UBA 21001220<br />
+<hr />
+elektro-altgeräte register (ear)<br />
+WEEE-Reg.-Nr. DE 84984885<br />
+Rechtliche Hinweise<br />
+<br />
+<p>Die in den Webseiten des Auftritts der Leoworx Ortungssysteme GmbH enthaltenen Inhalte werden ständig und mit größter Sorgfalt aktualisiert. Trotzdem kann keine Garantie für Richtigkeit, Aktualität oder Vollständig gewährt werden. Eine Haftung für fehlerhafte Inhalte wird nicht übernommen. Die Leoworx Ortungssysteme GmbH übernimmt keine Haftung für alle Verbindungen ("Links"), auf welche diese Website direkt oder indirekt verweist. Der Inhalt und die Struktur dieser Website sind urheberrechtlich geschützt. Dieser Schutz bezieht sich auch auf die auf dieser Website verwendeten Logos und Markenzeichen. Informationen, Bilder, Logos, Markenzeichen und andere Daten von den Webseiten der Leoworx OrtungssystemeGmbH dürfen nicht ohne vorherige schriftliche Zustimmung derselben weiterverwendet oder genutzt werden. Ein Verlinken fremder Webseiten ist nur gestattet, wenn der Link auf die Homepage verweist und keine Rechte der Leoworx Ortungssysteme GmbH oder einer ihrer Partner verletzt werden. Ein direktes Verlinken auf einzelne Unterseiten ist nicht gestattet. </p>
+<br />
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;{{ 'close_project'|trans }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                    
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -571,7 +732,7 @@
                                 </ul>
                             </div>
                             
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;{{ 'close_project'|trans }}</button>
                         </div>
                     </div>
                 </div>
@@ -605,7 +766,7 @@
                                     <li class="list-group-item">{{ 'obd2_desc_5'|trans }}</li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;{{ 'close_project'|trans }}</button>
                         </div>
                     </div>
                 </div>
@@ -640,7 +801,7 @@
                                     <li class="list-group-item">{{ 'wired_desc_5'|trans }}</li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;{{ 'close_project'|trans }}</button>
                         </div>
                     </div>
                 </div>
