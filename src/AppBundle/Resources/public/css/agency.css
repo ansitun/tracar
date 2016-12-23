@@ -1080,6 +1080,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     }
 }
 
+.timeline-image {
+    border: 0 !important;
+    background-color: #fff !important;
+}
+
+.rotate {
+    padding: 0px;
+}
 /*@media screen and (min-width: 800px) {
     .fa-4x {
         font-size: 4em;
