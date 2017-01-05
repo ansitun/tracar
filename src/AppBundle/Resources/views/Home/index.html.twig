@@ -161,8 +161,7 @@
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x rotate">
-                        <i class="fa fa-circle fa-stack-2x text-primary" style="font-size: 2em !important;"></i>
-                        <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
+                        <img src="{{ asset('bundles/app/img/portal/icon_gnss.jpg') }}" class="img-responsive img-circle" alt="">
                     </span>
                     <h4 class="service-heading">{{ 'support'|trans }}</h4>
                     <p class="text-muted">{{ 'support_desc'|trans }}</p>
@@ -485,10 +484,8 @@
     
     <!-- Map Aside -->
     <aside class="clients">
-       <center><div style="width: 80%; margin: 2%">
-                <iframe width="100%" height="400" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=400&amp;hl=en&amp;q=Ernst-Abbe-Stra%C3%9Fe%201%2C%2066115%20Saarbr%C3%BCcken%2C%20Germany+(Leoworx%20Ortungssysteme%20GmbH)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pl/stworz-mape-google/">Osadź html Google Maps</a>
-                </iframe>
-               </div>
+       <center>
+           <div style="width: 80%; margin: 2%; height: 400px; background-color: grey;" id = "map"></div>
        </center>   
        
     </aside>
@@ -803,6 +800,7 @@ Rechtliche Hinweise<br />
         <!-- Plugin JavaScript -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="{{ asset('bundles/app/js/agency.js') }}"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4wRJK5cbs_LEFrwG16N3cdRUBOSzU6JA&callback=initMap"></script>
         <script src="{{ asset('bundles/app/js/jqBootstrapValidation.js') }}"></script>
         <script src="{{ asset('bundles/app/js/contact_me.js') }}"></script>
         <script src="{{ asset('bundles/app/js/classie.js') }}"></script>

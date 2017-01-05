@@ -52,6 +52,18 @@ $(document).ready(function(){
     $(window).on("scroll",check_if_in_view);
 });
 
+function initMap() {
+        var uluru = {lat: 49.240170, lng: 6.951404}; 
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      };
+
 function randomFade() {
     setInterval(function () {
             $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')')
