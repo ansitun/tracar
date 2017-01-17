@@ -40,6 +40,52 @@ $(function() {
             $("#policy-content2").show();
         }
     });
+    
+    setInterval(function(){
+        
+        var img1 = $("#img1");
+        var img2 = $("#img2");
+        
+        if(img1.hasClass("active-img")) {
+            img1.removeClass("active-img");
+        } else {
+            img1.addClass("active-img");
+        }
+        
+        if(img2.hasClass("active-img-2")) {
+            img2.removeClass("active-img-2");
+        } else {
+            img2.addClass("active-img-2");
+        }       
+
+console.log("see");
+
+
+    }, 5000);
+        
+    setInterval(function(){
+
+        setTimeout(function(){
+            var img1 = $("#img1");
+            var img2 = $("#img2");
+            var src = img1.attr("src");
+            var pos = src.substring(src.lastIndexOf("_") - 1, src.lastIndexOf("_"));
+            
+//            if(pos == 1 || pos == 3 || pos == 4 ) {
+//                $(".intro-heading").fadeToggle("slow");
+//            }
+            
+            pos = (pos == 5) ? 1 : ++pos;
+            img1.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + src.substring(src.lastIndexOf("_"), src.length)));
+            img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
+
+            console.log("see2");
+        }, 5000);
+        
+
+    
+    }, 10000);
+    
 });
 
 // Highlight the top nav as scrolling occurs

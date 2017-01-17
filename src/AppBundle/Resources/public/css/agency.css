@@ -1093,3 +1093,42 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         font-size: 4em;
     }
 }*/
+
+.header-img-9 {
+    width: 100%; 
+    position:absolute; 
+    opacity: 0.9
+}
+
+.header-img-1 {
+    width: 100%; 
+    position:absolute; 
+    opacity: 0.1
+}
+
+#custom {
+    display: block;
+}
+
+#img1, #img2 {
+    width: 100%; 
+    position:absolute; 
+    -webkit-transition: all 2s ease-out 1s; /* Safari */
+    -moz-transition:  all 2s ease-out 1s;
+    transition: all 2s ease-out 1s;
+    left: 0%;
+}
+
+.active-img {
+    left: -100% !important; 
+    -webkit-transition: all 2s ease-out 1s !important; /* Safari */
+    -moz-transition:  all 2s ease-out 1s !important;
+    transition: all 2s ease-out 1s !important;
+}
+
+.active-img-2 {
+    left: 100% !important; 
+    -webkit-transition: all 2s ease-out 1s !important; /* Safari */
+    -moz-transition:  all 2s ease-out 1s !important;
+    transition: all 2s ease-out 1s !important;
+}
