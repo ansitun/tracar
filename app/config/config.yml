@@ -17,7 +17,7 @@ framework:
     csrf_protection: ~
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
-    templating: { engines: ['twig'], assets_version: v10 }
+    templating: { engines: ['twig'], assets_version: v12 }
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -61,7 +61,7 @@ ibrows_sonata_translation:
         # ignored for inline mode
         
 lexik_translation:
-    fallback_locale: en      
+    fallback_locale: de
     managed_locales: [en,ne,de]    
     base_layout: "LexikTranslationBundle::layout.html.twig"
     grid_input_type: text       

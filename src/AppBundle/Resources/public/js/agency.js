@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -71,10 +65,6 @@ console.log("see");
             var src = img1.attr("src");
             var pos = src.substring(src.lastIndexOf("_") - 1, src.lastIndexOf("_"));
             
-//            if(pos == 1 || pos == 3 || pos == 4 ) {
-//                $(".intro-heading").fadeToggle("slow");
-//            }
-            
             pos = (pos == 5) ? 1 : ++pos;
             img1.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + src.substring(src.lastIndexOf("_"), src.length)));
             img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
@@ -94,7 +84,6 @@ $('body').scrollspy({
 });
     
 $(document).ready(function(){
-    randomFade();
     $(window).on("scroll",check_if_in_view);
 });
 
@@ -109,21 +98,6 @@ function initMap() {
           map: map
         });
       };
-
-function randomFade() {
-    setInterval(function () {
-            $('.random-float > div:eq(' + (Math.floor(Math.random() * 10)) + ')')
-                .animate({ "left": "-=30px" }, "slow")
-                .fadeIn(800)
-                .delay(800)
-                .animate({ "left": "+=30px" }, "slow")
-                .fadeOut(800)
-                .delay(800)
-                .fadeIn(800);
-        }, 1800); 
-        
-    return;
-}
 
 function check_if_in_view() {
       var $animation_elements = $('.timeline > li, .rotate');
@@ -156,32 +130,6 @@ function check_if_in_view() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
-}
-
-function animateDiv(i){
-    var newq = makeNewPosition();
-    // Math.floor((Math.random() * 10) + 1)
-
-    var el = "#random-float-" + i;
-    var oldq = $(el).offset();
-    var speed = calcSpeed([oldq.top, oldq.left], newq);
-    
-    $(el).animate({ top: newq[0], left: newq[1] }, speed, function(){
-      animateDiv(this.id.substring(13));        
-    });
-};
 
 function calcSpeed(prev, next) {
     

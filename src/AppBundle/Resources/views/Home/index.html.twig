@@ -81,7 +81,7 @@
                           <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu lang" style="padding: 10px">
-                            <li id="en"> <a style="color: #315B80" href="{{ path('home') }}">English</a> </li>
+                            <li id="en"> <a style="color: #315B80" href="{{ path('home', {slug:'en'}) }}">English</a> </li>
                             <li id="ne"> <a style="color: #315B80" href="{{ path('home', {slug:'de'}) }}">Deutsch</a> </li>
                         </ul>
                       </div>
@@ -92,32 +92,12 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-                        
                         <!---- this part ---->
-    <!-- Header -->
-    
-{# <header>
-       
-    <div class="container">
-        <video class="header-vd" controls preload="true" autoplay loop muted>
-        <source src="{{ asset('bundles/app/video/GPS.mp4') }}" type="video/mp4" > 
-        </video>
-        <div class="intro-text">
-            <div class="overlay">
-                <div class="intro-lead-in">{{ 'sub_title'|trans }}</div>
-                <div class="intro-heading">{{ 'title_subtext'|trans }}</div>
-                <a href="#services" class="page-scroll btn btn-xl">{{ 'know_more'|trans }}</a>
-            </div>
-        </div>
-    </div>
-        
-</header>#}
-      
     <header style="height:800px; width: auto; position: relative;">
         <div id="custom">
-            <img src="{{ asset('bundles/app/img/portal/slider1_1.png') }}" class="img-responsive active-img" id="img1" alt="" style="opacity: 0.1">
-            <img src="{{ asset('bundles/app/img/portal/slider1_2.png') }}" class="img-responsive active-img-2" id="img2" alt="" style="opacity: 0.9">
+            <img src="{{ asset('bundles/app/img/portal/slider1_1.png') }}" class="img-responsive active-img" id="img1" alt="">
+            <img src="{{ asset('bundles/app/img/portal/slider1_2.png') }}" class="img-responsive active-img-2" id="img2" alt="">
+            <img src="{{ asset('bundles/app/img/portal/icon_graphic_all_header.png') }}" class="img-responsive" id="img3" alt="" width="4500px" height="auto" style="position:absolute; top: 40%; width: 4000px; overflow: hidden;">
         </div>
 
         <div class="container">
@@ -127,18 +107,6 @@
                 {#<a href="#services" class="page-scroll btn btn-xl" style="margin-top: 200px;">{{ 'know_more'|trans }}</a>#}
             </div>
         
-        </div>
-        <div class="random-float">
-            <div style="font-size: 190%; opacity: 0.4; top:68%; left:60%;">43°2’27” N</div>   
-            <div style="font-size: 222%; opacity: 0.3; top:88%; left:70%;">13°24’53” N</div>   
-            <div style="font-size: 185%; opacity: 0.4; top:88%; left:85%;">51°21’35” N</div>   
-            <div style="font-size: 140%; opacity: 0.5; top:72%; left:72%;">43°12’47” N</div>   
-            <div style="font-size: 329%; opacity: 0.2; top:85%; left:30%;">3°52’24” N</div>   
-            <div style="font-size: 150%; opacity: 0.3; top:65%; left:64%;">5°9’43” N</div>   
-            <div style="font-size: 320%; opacity: 0.2; top:72%; left:82%;">8°23’40” N</div>   
-            <div style="font-size: 239%; opacity: 0.3; top:82%; left:38%;">6°9’25” N</div>   
-            <div style="font-size: 205%; opacity: 0.3; top:82%; left:24%;">17°34’43” N</div>   
-            <div style="font-size: 800%; opacity: 0.6; top:72%; left:50%;">28°5’29” N</div>   
         </div>
     </header>
 
@@ -297,10 +265,6 @@
                             <div class="timeline-image">
                                 <img src="{{ asset('bundles/app/img/portal/icon_anti-theft protection.png') }}" class="img-responsive img-circle" alt="">
                                 
-{#                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-3x text-primary"></i>
-                                    <i class="fa fa-life-ring fa-stack-2x fa-inverse"></i>
-                                </span>#}
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -505,14 +469,6 @@
                     <img style="width:80%; margin-top: -20%" src="{{ asset('bundles/app/img/logos/vodafone.png') }}" class="rcorners img-responsive" alt="">
                 </div> 
                 <div class="col-md-4">
-                    <!--<ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>-->
                 </div>
                 <div class="col-md-3">
                     <ul class="list-inline quicklinks">
@@ -526,9 +482,6 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-    
     <!-- Policy Modal  -->
     <div class="portfolio-modal modal fade" id="policy" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content" style="text-align: left">

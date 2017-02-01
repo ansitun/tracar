@@ -38,6 +38,6 @@ fos_user_change_password:
 
 home:
     path:     /{slug}
-    defaults: { _controller: AppBundle:Home:index, slug: en }
+    defaults: { _controller: AppBundle:Home:index, slug: de }
     requirements:
         _locale: en|de|ne    
