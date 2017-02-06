@@ -39,6 +39,7 @@ $(function() {
         
         var img1 = $("#img1");
         var img2 = $("#img2");
+        var img3 = $("#img3");
         
         if(img1.hasClass("active-img")) {
             img1.removeClass("active-img");
@@ -50,31 +51,37 @@ $(function() {
             img2.removeClass("active-img-2");
         } else {
             img2.addClass("active-img-2");
-        }       
+        }
+        
+        if(img3.hasClass("active-img-3")) {
+            img3.removeClass("active-img-3");
+        } else {
+            img3.addClass("active-img-3");
+        }
 
 console.log("see");
 
 
-    }, 5000);
+    }, 3000);
         
     setInterval(function(){
 
         setTimeout(function(){
             var img1 = $("#img1");
             var img2 = $("#img2");
+            var img3 = $("#img3");
             var src = img1.attr("src");
             var pos = src.substring(src.lastIndexOf("_") - 1, src.lastIndexOf("_"));
             
             pos = (pos == 5) ? 1 : ++pos;
             img1.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + src.substring(src.lastIndexOf("_"), src.length)));
             img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
-
+            img3.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_3" + src.substring(src.lastIndexOf("_") + 2, src.length)));
+            
             console.log("see2");
-        }, 5000);
-        
-
+        }, 3000);
     
-    }, 10000);
+    }, 6000);
     
 });
 

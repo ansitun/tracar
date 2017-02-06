@@ -865,7 +865,7 @@ body {
 }
 
 header {
-    background-image: url(../img/background2.png);
+    background-image: url(../img/background_general.png);
     /*background: linear-gradient(to top, #21416B, #A3DBF6);
 background: -webkit-gradient(linear, bottom, top, from(rgba(20,50,95,0.9)), to(rgba(90,195,240,1)));
 background: -moz-linear-gradient(top, rgba(20,50,95,0.9), rgba(90,195,240,1));
@@ -1117,6 +1117,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     -moz-transition:  all 2s ease-out 1s;
     transition: all 2s ease-out 1s;
     left: 0%;
+    height: 750px;
+}
+
+#img3 {
+    top: -100%; 
+    position:absolute; 
+    -webkit-transition: all 2s ease-out 1s !important; /* Safari */
+    -moz-transition:  all 2s ease-out 1s !important;
+    transition: all 2s ease-out 1s !important;
+    height: 750px;
+    width: 100%;
 }
 
 .active-img {
@@ -1128,6 +1139,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 
 .active-img-2 {
     left: 100% !important; 
+    -webkit-transition: all 2s ease-out 1s !important; /* Safari */
+    -moz-transition:  all 2s ease-out 1s !important;
+    transition: all 2s ease-out 1s !important;
+}
+
+.active-img-3 {
+    top: 0% !important; 
     -webkit-transition: all 2s ease-out 1s !important; /* Safari */
     -moz-transition:  all 2s ease-out 1s !important;
     transition: all 2s ease-out 1s !important;
