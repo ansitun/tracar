@@ -35,7 +35,13 @@ $(function() {
         }
     });
     
-    setInterval(function(){
+    headerInterval = setInterval(headFunc, 2000);
+        
+    headerInterval2 = setInterval(headFunc2, 4000);
+    
+});
+
+var headFunc = function(){
         
         var img1 = $("#img1");
         var img2 = $("#img2");
@@ -59,12 +65,11 @@ $(function() {
             img3.addClass("active-img-3");
         }
 
-console.log("see");
+        console.log("see");
 
-
-    }, 3000);
-        
-    setInterval(function(){
+    };
+    
+var headFunc2 = function(){
 
         setTimeout(function(){
             var img1 = $("#img1");
@@ -79,11 +84,9 @@ console.log("see");
             img3.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_3" + src.substring(src.lastIndexOf("_") + 2, src.length)));
             
             console.log("see2");
-        }, 3000);
+        }, 2000);
     
-    }, 6000);
-    
-});
+    };
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -130,6 +133,24 @@ function check_if_in_view() {
         }
       });
       
+      var $head = $("header");
+      var element_height = $head.outerHeight();
+      var element_top_position = $head.offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+      
+      if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+            
+            //headerInterval = setInterval(headFunc, 3000);
+            //headerInterval2 = setInterval(headFunc2, 6000);
+            $head.addClass('in-view');
+        } else {
+            
+//            clearInterval(headerInterval);
+//            clearInterval(headerInterval2);
+            $head.removeClass('in-view');
+        }
+  
       return;
 }
 
