@@ -17,7 +17,7 @@ framework:
     csrf_protection: ~
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
-    templating: { engines: ['twig'], assets_version: v21 }
+    templating: { engines: ['twig'], assets_version: v26 }
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -108,7 +108,10 @@ swiftmailer:
     host:      "%mailer_host%"
     username:  "%mailer_user%"
     password:  "%mailer_password%"
-    spool:     { type: memory }
+    port:      "%mailer_port%"
+    encryption: "%mailer_encryption%"
+    sender_address: "%mailer_user%"
+#    spool:     { type: memory }
 
 # Assetic Configuration
 assetic:

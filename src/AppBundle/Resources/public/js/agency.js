@@ -35,9 +35,16 @@ $(function() {
         }
     });
     
-    headerInterval = setInterval(headFunc, 2000);
+    $("#submitContact").on("click", function() {
+        alert("clicked");
+    });
+    
+    //headerInterval = setInterval(headFunc, 2000);
         
-    headerInterval2 = setInterval(headFunc2, 4000);
+    headFunc();
+    setTimeout(headFunc2, 8000);
+    
+    //headerInterval2 = setInterval(headFunc2, 8000);
     
 });
 
@@ -48,6 +55,7 @@ var headFunc = function(){
         var img3 = $("#img3");
         
         if(img1.hasClass("active-img")) {
+            check = 1;
             img1.removeClass("active-img");
         } else {
             img1.addClass("active-img");
@@ -65,26 +73,26 @@ var headFunc = function(){
             img3.addClass("active-img-3");
         }
 
+        setTimeout(headFunc, 4000);
         console.log("see");
-
     };
     
 var headFunc2 = function(){
 
-        setTimeout(function(){
-            var img1 = $("#img1");
-            var img2 = $("#img2");
-            var img3 = $("#img3");
-            var src = img1.attr("src");
-            var pos = src.substring(src.lastIndexOf("_") - 1, src.lastIndexOf("_"));
-            
-            pos = (pos == 5) ? 1 : ++pos;
-            img1.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + src.substring(src.lastIndexOf("_"), src.length)));
-            img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
-            img3.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_3" + src.substring(src.lastIndexOf("_") + 2, src.length)));
-            
-            console.log("see2");
-        }, 2000);
+    var img1 = $("#img1");
+    var img2 = $("#img2");
+    var img3 = $("#img3");
+    var src = img1.attr("src");
+    var pos = src.substring(src.lastIndexOf("_") - 1, src.lastIndexOf("_"));
+
+    pos = (pos == 5) ? 1 : ++pos;
+    img1.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + src.substring(src.lastIndexOf("_"), src.length)));
+    img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
+    img3.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_3" + src.substring(src.lastIndexOf("_") + 2, src.length)));
+
+    console.log("see2");
+    
+    setTimeout(headFunc2, 8000);
     
     };
 
