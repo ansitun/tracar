@@ -38,14 +38,9 @@ $(function() {
     $("#submitContact").on("click", function() {
         alert("clicked");
     });
-    
-    //headerInterval = setInterval(headFunc, 2000);
-        
+
     headFunc();
-    setTimeout(headFunc2, 8000);
-    
-    //headerInterval2 = setInterval(headFunc2, 8000);
-    
+    setTimeout(headFunc2, 10000);
 });
 
 var headFunc = function(){
@@ -73,7 +68,7 @@ var headFunc = function(){
             img3.addClass("active-img-3");
         }
 
-        setTimeout(headFunc, 4000);
+        setTimeout(headFunc, 5000);
         console.log("see");
     };
     
@@ -92,7 +87,7 @@ var headFunc2 = function(){
 
     console.log("see2");
     
-    setTimeout(headFunc2, 8000);
+    setTimeout(headFunc2, 10000);
     
     };
 
