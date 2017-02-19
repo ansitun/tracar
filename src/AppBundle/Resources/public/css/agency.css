@@ -882,7 +882,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     -o-background-size: cover;
     text-align: center;
     color: #fff;
-    height:900px; 
     width: auto; 
     position: relative;
 }
@@ -1038,6 +1037,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2)
 {
+    
+    header, #img1, #img2, #img3 {
+        height: 650px;
+    }
+
     header .intro-text .intro-heading {
         margin-top: 70%;
     }
@@ -1123,13 +1127,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     width: 100%; 
     position:absolute; 
     left: 0%;
-    height: 900px;
 }
 
 #img3 {
     top: -100%; 
     position:absolute; 
-    height: 900px;
     width: 100%;
 }
 
@@ -1143,4 +1145,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 
 .active-img-3 {
     top: 0% !important; 
+}
+
+header, #img1, #img2, #img3 {
+    height: 950px;
 }
