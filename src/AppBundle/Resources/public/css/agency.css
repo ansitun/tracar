@@ -980,6 +980,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 
 @media screen and (min-width: 300px) and (max-width: 799px) {
     
+    header, #img1, #img2, #img3 {
+        height: 450px;
+    }
+    
     header .intro-text .intro-heading {
         margin-top: 70%;
     }
@@ -1039,7 +1043,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 {
     
     header, #img1, #img2, #img3 {
-        height: 650px;
+        height: 450px;
     }
 
     header .intro-text .intro-heading {
