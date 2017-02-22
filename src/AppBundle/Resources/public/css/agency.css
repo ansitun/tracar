@@ -5,15 +5,15 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Sans-serif", "Helvetica Neue"
+    font-family: "sans-serif", "Helvetica Neue"
 }
 
 .text-muted {
-    color: #777
+    color: rgba(165,175,205,1);
 }
 
 .text-primary {
-    color: #41C8F4
+    color: rgba(90, 195, 240, 1);
 }
 
 p {
@@ -34,14 +34,14 @@ a.active {
 }
 
 a {
-    color: #41C8F4
+    color: rgba(90, 195, 240, 1);
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #41C8F4
+    color: rgba(90, 195, 240, 1)
 }
 
 h1,
@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700
 }
@@ -60,18 +60,14 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7
-}
-
-.bg-darkest-gray {
-    background-color: #222
+    background-color: rgba(165,175,205,1);
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #41C8F4;
-    border-color: #41C8F4;
-    font-family: "Sans-serif", "Helvetica Neue";
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(90, 195, 240, 1);
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700
 }
@@ -82,8 +78,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #41C8F4;
-    border-color: #f6bf01
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(165, 175, 205, 1);
 }
 
 .btn-primary:active,
@@ -107,20 +103,20 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #41C8F4;
-    border-color: #41C8F4
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(90, 195, 240, 1)
 }
 
 .btn-primary .badge {
-    color: #41C8F4;
+    color: rgba(90, 195, 240, 1);
     background-color: #fff
 }
 
 .btn-xl {
     color: #fff;
-    background-color: #41C8F4;
-    border-color: #41C8F4;
-    font-family: "Sans-serif", "Helvetica Neue";
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(90, 195, 240, 1);
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -134,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #41C8F4;
+    background-color: rgba(90, 195, 240, 1);
     border-color: #f6bf01
 }
 
@@ -159,12 +155,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    background-color: #41C8F4;
-    border-color: #41C8F4
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(90, 195, 240, 1)
 }
 
 .btn-xl .badge {
-    color: #41C8F4;
+    color: rgba(90, 195, 240, 1);
     background-color: #fff
 }
 
@@ -174,15 +170,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    color: #41C8F4;
-    font-family: "Sans-serif", "Helvetica Neue"
+    color: rgba(90, 195, 240, 1);
+    font-family: "sans-serif", "Helvetica Neue"
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #41C8F4
+    color: rgba(90, 195, 240, 1)
 }
 
 .navbar-default .navbar-collapse {
@@ -190,8 +186,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #41C8F4;
-    border-color: #41C8F4
+    background-color: rgba(90, 195, 240, 1);
+    border-color: rgba(90, 195, 240, 1)
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -200,11 +196,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #41C8F4
+    background-color: rgba(90, 195, 240, 1)
 }
 
 .navbar-default .nav li a {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -213,14 +209,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #5AC3F0;
+    color: rgba(90, 195, 240, 1);
     outline: 0
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #000;
-    background-color: rgba(90, 195, 240, 1)
+    background-color: rgba(90, 195, 240, 1);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -235,7 +231,7 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
@@ -244,7 +240,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-top: 50%;
-    font-family: "Dinpro", "Lucida Grande", "Sans-serif";
+    font-family: "Dinpro", "Lucida Grande", "sans-serif";
     text-transform: uppercase;
     font-weight: 100;
     font-size: 35px;
@@ -286,14 +282,14 @@ header .intro-text .intro-heading {
         margin-top: -30%
     }
     header .intro-text .intro-lead-in {
-        font-family: "Sans-serif", "Helvetica Neue";
+        font-family: "sans-serif", "Helvetica Neue";
         font-style: italic;
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 25px
     }
     header .intro-text .intro-heading {
-        font-family: "Dinpro", "Lucida Grande", "Sans-serif";
+        font-family: "Dinpro", "Lucida Grande", "sans-serif";
         text-transform: uppercase;
         font-weight: 100;
         font-size: 70px;
@@ -314,7 +310,7 @@ section h2.section-heading {
 
 section h3.section-subheading {
     font-size: 16px;
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: none;
     font-style: italic;
     font-weight: 400;
@@ -393,7 +389,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     font-style: italic;
     font-size: 16px;
     margin: 0
@@ -421,7 +417,7 @@ section h3.section-subheading {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #f1f1f1;
+    background-color: rgba(165, 175, 205, 1);
     left: 40px;
     margin-left: -1.5px
 }
@@ -471,10 +467,10 @@ section h3.section-subheading {
     height: 100%;
     position: absolute;
     z-index: 100;
-    background-color: #41C8F4;
+    background-color: rgba(90, 195, 240, 1);
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid rgba(165, 175, 205, 1);
     text-align: center
 }
 
@@ -649,40 +645,40 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #41C8F4;
+    border-color: rgba(90, 195, 240, 1);
     box-shadow: none
 }
 
 section#contact::-webkit-input-placeholder {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
-    color: #bbb
+    color: rgba(165, 175, 205, 1);
 }
 
 section#contact:-moz-placeholder {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
-    color: #bbb
+    color: rgba(165, 175, 205, 1);
 }
 
 section#contact::-moz-placeholder {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
-    color: #bbb
+    color: rgba(165, 175, 205, 1);
 }
 
 section#contact:-ms-input-placeholder {
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     font-weight: 700;
-    color: #bbb
+    color: rgba(165, 175, 205, 1);
 }
 
 section#contact .text-danger {
-    color: #e74c3c
+    color: rgba(165, 175, 205, 1);
 }
 
 footer {
@@ -692,7 +688,7 @@ footer {
 
 footer span.copyright {
     line-height: 40px;
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     text-transform: none
 }
@@ -700,7 +696,7 @@ footer span.copyright {
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     text-transform: uppercase;
     text-transform: none
 }
@@ -727,7 +723,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #41C8F4
+    background-color: rgba(90, 195, 240, 1)
 }
 
 .btn:focus,
@@ -759,7 +755,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Sans-serif", "Helvetica Neue";
+    font-family: "sans-serif", "Helvetica Neue";
     font-style: italic;
     font-size: 16px
 }
@@ -791,7 +787,7 @@ ul.social-buttons li a:active {
     height: 75px;
     width: 1px;
     margin-left: 35px;
-    background-color: #222;
+    background-color: rgba(165,175,205,1);
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -801,7 +797,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
     width: 1px;
-    background-color: #222;
+    background-color: rgba(165,175,205,1);
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -815,12 +811,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #41C8F4
+    background: rgba(90, 195, 240, 1);
 }
 
 ::selection {
     text-shadow: none;
-    background: #41C8F4
+    background: rgba(90, 195, 240, 1)
 }
 
 img::selection {
@@ -832,13 +828,13 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #41C8F4
+    webkit-tap-highlight-color: rgba(90, 195, 240, 1)
 }
 
 
 /*.rcorners {
     border-radius: 5px;
-    border: 2px solid #41C8F4; 
+    border: 2px solid rgba(90, 195, 240, 1); 
 }*/
 
 .btn-group:hover,
@@ -887,7 +883,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 }
 
 .bg-light-blue {
-    background-color: #FCFEFF;
+    background-color: rgba(90, 195, 240, 1);
 }
 
 .header-vd {
