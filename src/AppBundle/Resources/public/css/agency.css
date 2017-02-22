@@ -9,7 +9,7 @@ body {
 }
 
 .text-muted {
-    color: rgba(165,175,205,1);
+    color: #777;
 }
 
 .text-primary {
@@ -60,7 +60,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: rgba(165,175,205,1);
+    background-color: #f7f7f7;
 }
 
 .btn-primary {
@@ -787,7 +787,7 @@ ul.social-buttons li a:active {
     height: 75px;
     width: 1px;
     margin-left: 35px;
-    background-color: rgba(165,175,205,1);
+    background-color: #000;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -797,7 +797,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
     width: 1px;
-    background-color: rgba(165,175,205,1);
+    background-color: #000;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -883,7 +883,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 }
 
 .bg-light-blue {
-    background-color: rgba(90, 195, 240, 1);
+    background-color: #fff;
 }
 
 .header-vd {
