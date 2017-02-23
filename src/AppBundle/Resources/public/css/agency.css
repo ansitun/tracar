@@ -678,7 +678,7 @@ section#contact:-ms-input-placeholder {
 }
 
 section#contact .text-danger {
-    color: rgba(165, 175, 205, 1);
+    color: #f7f7f7;
 }
 
 footer {

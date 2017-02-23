@@ -34,10 +34,6 @@ $(function() {
             $("#policy-content2").show();
         }
     });
-    
-    $("#submitContact").on("click", function() {
-        alert("clicked");
-    });
 
     headFunc();
     setTimeout(headFunc2, 10000);
@@ -69,7 +65,7 @@ var headFunc = function(){
         }
 
         setTimeout(headFunc, 5000);
-        console.log("see");
+        //console.log("see");
     };
     
 var headFunc2 = function(){
@@ -85,8 +81,6 @@ var headFunc2 = function(){
     img2.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_2" + src.substring(src.lastIndexOf("_") + 2, src.length)));
     img3.attr("src", (src.substring(0, src.lastIndexOf("_") - 1) + pos + "_3" + src.substring(src.lastIndexOf("_") + 2, src.length)));
 
-    console.log("see2");
-    
     setTimeout(headFunc2, 10000);
     
     };
