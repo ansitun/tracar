@@ -882,6 +882,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     position: relative;
 }
 
+header, #img1, #img2, #img3 {
+    height: 95vh;
+}
+
+
 .bg-light-blue {
     background-color: #fff;
 }
@@ -977,7 +982,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 @media screen and (min-width: 300px) and (max-width: 799px) {
     
     header, #img1, #img2, #img3 {
-        height: 450px;
+        height: 60vh;
     }
     
     header .intro-text .intro-heading {
@@ -993,6 +998,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         width: auto;
         overflow: hidden;
         overflow-y: auto;
+        padding-top: 5%;
     }
     
     .navbar-toggle {
@@ -1024,6 +1030,29 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
         overflow-x: hidden !important;
     }
 }
+
+@media screen and (max-height: 420px) and (max-width: 740px) {
+
+button.navbar-toggle {
+
+  margin-top: 4%;
+
+}
+
+header, #img1, #img2, #img3 {
+
+ height: 100vh;
+}
+
+header {
+
+padding-top: 5%;
+
+}
+
+}
+
+
 
 @media only screen 
     and (min-device-width : 375px) 
@@ -1147,6 +1176,3 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
     top: 0% !important; 
 }
 
-header, #img1, #img2, #img3 {
-    height: 950px;
-}
