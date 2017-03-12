@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
