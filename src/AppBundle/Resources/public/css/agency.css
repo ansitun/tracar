@@ -5,7 +5,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "sans-serif", "Helvetica Neue"
+    font-family: sans-serif
 }
 
 .text-muted {
@@ -67,7 +67,7 @@ h6 {
     color: #fff;
     background-color: rgba(90, 195, 240, 1);
     border-color: rgba(90, 195, 240, 1);
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -116,7 +116,7 @@ fieldset[disabled] .btn-primary.active {
     color: #fff;
     background-color: rgba(90, 195, 240, 1);
     border-color: rgba(90, 195, 240, 1);
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     color: rgba(90, 195, 240, 1);
-    font-family: "sans-serif", "Helvetica Neue"
+    font-family: sans-serif
 }
 
 .navbar-default .navbar-brand:hover,
@@ -200,7 +200,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -231,7 +231,7 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
@@ -249,7 +249,7 @@ header .intro-text .intro-heading {
 }
 
 @media (min-width:768px) {
-        .navbar-default {
+    .navbar-default {
         background-color: #fff;
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -282,7 +282,7 @@ header .intro-text .intro-heading {
         margin-top: -30%
     }
     header .intro-text .intro-lead-in {
-        font-family: "sans-serif", "Helvetica Neue";
+        font-family: sans-serif;
         font-style: italic;
         font-size: 40px;
         line-height: 40px;
@@ -310,7 +310,7 @@ section h2.section-heading {
 
 section h3.section-subheading {
     font-size: 16px;
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
@@ -389,7 +389,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     font-style: italic;
     font-size: 16px;
     margin: 0
@@ -650,28 +650,28 @@ section#contact .form-control:focus {
 }
 
 section#contact::-webkit-input-placeholder {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(165, 175, 205, 1);
 }
 
 section#contact:-moz-placeholder {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(165, 175, 205, 1);
 }
 
 section#contact::-moz-placeholder {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(165, 175, 205, 1);
 }
 
 section#contact:-ms-input-placeholder {
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(165, 175, 205, 1);
@@ -688,7 +688,7 @@ footer {
 
 footer span.copyright {
     line-height: 40px;
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     text-transform: none
 }
@@ -696,7 +696,7 @@ footer span.copyright {
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     text-transform: uppercase;
     text-transform: none
 }
@@ -755,7 +755,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "sans-serif", "Helvetica Neue";
+    font-family: sans-serif;
     font-style: italic;
     font-size: 16px
 }
@@ -883,7 +883,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(20,50,95,0
 }
 
 header, #img1, #img2, #img3 {
-    height: 95vh;
+    height: 100vh;
 }
 
 
@@ -985,6 +985,10 @@ header, #img1, #img2, #img3 {
         height: 60vh;
     }
     
+    #img1, #img2, #img3 {
+       padding-top: 10vh !important;
+    }
+    
     header .intro-text .intro-heading {
         margin-top: 70%;
     }
@@ -998,7 +1002,6 @@ header, #img1, #img2, #img3 {
         width: auto;
         overflow: hidden;
         overflow-y: auto;
-        padding-top: 5%;
     }
     
     .navbar-toggle {
@@ -1044,11 +1047,10 @@ header, #img1, #img2, #img3 {
  height: 100vh;
 }
 
-header {
-
-padding-top: 5%;
-
+#img1, #img2, #img3 {
+ padding-top: 5vh;
 }
+
 
 }
 
@@ -1068,7 +1070,7 @@ padding-top: 5%;
 {
     
     header, #img1, #img2, #img3 {
-        height: 450px;
+        height: 100vh;
     }
 
     header .intro-text .intro-heading {
@@ -1150,6 +1152,7 @@ padding-top: 5%;
     -webkit-transition: all 1.5s ease-out 1s; /* Safari */
     -moz-transition:  all 1.5s ease-out 1s;
     transition: all 1.5s ease-out 1s;
+    padding-top : 5vh;
 }
 
 #img1, #img2 {
